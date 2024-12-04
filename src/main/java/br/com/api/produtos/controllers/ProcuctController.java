@@ -20,7 +20,7 @@ public class ProcuctController {
 
     @PostMapping("/cadastrar")
     public ResponseEntity<?> cadastrar(@RequestBody Product pm){
-        return ps.cadastrar(pm);
+        return ps.cadastrarAlterar(pm, "cadastrar");
     }
 
 
