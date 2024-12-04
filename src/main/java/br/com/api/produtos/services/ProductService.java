@@ -40,5 +40,13 @@ public class ProductService {
         }
     }
 
+    //remover produto por id
+    public ResponseEntity<Response> remover(long id){
+        pr.deleteById(id);
+
+        rm.setMensagem("Produto removido com sucesso!");
+        return new ResponseEntity<Response>(rm, HttpStatus.OK);
+    }
+
     
 }
